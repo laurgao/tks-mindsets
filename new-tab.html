@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!--
+  Copyright 2020 Google LLC
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+
+<head>
+  <meta charset="utf-8"/>
+  <title>New Tab</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link href="./fonts/dm-sans.css" rel="stylesheet">
+  <script src="./script/sheet-url.js"></script>
+  <script src="./script/db-manager.js"></script>
+  <script src="./script/utils.js"></script>
+  <script src="./script/new-tab.js"></script>
+</head>
+
+<body>
+  <div id="display" class="light" style="--cmin: 0px; --cmax: 0px;">
+    <div id="block1" class="text-box">
+      <span></span>
+    </div>
+  </div>
+
+  <div id="feed-error" class="popup" style="visibility: hidden;">
+    <div class="dot-shadow popup-content">
+      <h1>Nothing to see here...</h1>
+      <div>
+        It looks like the content is missing from this extension. either try again later...<br />
+        or you could make your own new tab extension in the meantime!
+      </div>
+      <a href="https://tabmaker.withgoogle.com/" target="_blank">Make a new tab extension</a>
+    </div>
+  </div>
+
+  <div id='watermark'>
+    <span>Made by</span>
+    <a href="https://lauragao.ca/" target="_blank">Laura Gao</a>
+  </div>
+</body>

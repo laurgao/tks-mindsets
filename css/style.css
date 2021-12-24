@@ -1,0 +1,166 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+body {
+  align-items: stretch;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+#display {
+  flex: 1;
+}
+
+
+.link {
+  user-select: none;
+  cursor: pointer;
+}
+
+
+.dot-shadow {
+  position: relative;
+}
+
+
+.dot-shadow::after {
+  background: url("../dots.svg") bottom 4px right 4px / 12px;
+  border-radius: 15px 15px 0 15px;
+  bottom: -14px;
+  content: "";
+  display: block;
+  left: 14px;
+  position: absolute;
+  right: -14px;
+  top: 14px;
+  z-index: -1;
+}
+
+
+.popup {
+  align-items: center;
+  background-color: #f2f2f2;
+  display: grid;
+  font-family: "DM Sans", sans-serif;
+  height: 100%;
+  justify-items: center;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+
+.popup-content {
+  background: white;
+  border: 2px solid black;
+  border-radius: 7px;
+  display: grid;
+  gap: 2em;
+  padding: 2em;
+}
+
+.popup-content > h2 {
+  line-height: 13px;
+}
+
+h1 {
+  font-size: bigger;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+
+#feed-error a {
+  background: #54dc93;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  display: inline-block;
+  font-size: 14px;
+  justify-self: center;
+  padding: .8em 2em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+#watermark {
+  background: #fff8;
+  bottom: 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  left: 0;
+  padding: 1em;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  border-top-right-radius: 7px;
+}
+
+
+#watermark {
+  background: #fff8;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  border-top-right-radius: 7px;
+  font-weight: normal !important;
+}
+
+
+#watermark span {
+  font-weight: normal;
+}
+
+
+#watermark img {
+    height: 21px;
+}
+
+
+/* Custom styles */
+
+
+#display {
+  background: #ffffff;
+  display: grid;
+  gap: 2vmin;
+  grid-template-areas: "Block1";
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  padding: 2vmin;
+}
+
+
+#block1 {
+  align-items: center;
+  border-radius: 0px;
+  color: #000000;
+  display: flex;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  grid-area: Block1;
+  justify-content: center;
+  line-height: 1;
+  margin: 0 0 0 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0 0 0 0;
+  text-align: center;
+}
