@@ -18,9 +18,5 @@
   "permissions": [
     "alarms",
     "storage"
-  ],
-
-  "background": {
-    "service_worker": "script/background.js"
-  }
+  ]
 }
