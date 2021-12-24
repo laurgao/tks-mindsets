@@ -4,11 +4,13 @@
   "name": "TKS mindsets",
   "description": "all ur favs in 1 place",
   "action": {
-    "default_icon": "icon48.png"
+    "default_icon": "icon64.png"
   },
   "icons": {
-      "48": "icon48.png",
-      "128": "icon128.png"
+      "32": "icon32.png",
+      "64": "icon64.png",
+      "128": "icon128.png",
+      "256": "icon256.png"
   },
   "version": "1.0",
   "chrome_url_overrides" : {
