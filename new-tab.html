@@ -21,16 +21,18 @@
   <title>New Tab</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <link href="./fonts/dm-sans.css" rel="stylesheet">
-  <script src="./script/sheet-url.js"></script>
+  <!-- <script src="./script/sheet-url.js"></script>
   <script src="./script/db-manager.js"></script>
   <script src="./script/utils.js"></script>
-  <script src="./script/new-tab.js"></script>
+  <script src="./script/new-tab.js"></script> -->
+  <script src="./script/main.js"></script>
 </head>
 
 <body>
-  <div id="display" class="light" style="--cmin: 0px; --cmax: 0px;">
+  <div id="display" style="--cmin: 0px; --cmax: 0px; background-color: black; color: white;">
     <div id="block1" class="text-box">
-      <span></span>
+      <div id="title" style="font-size: 3rem; font-weight: bold; text-align: right"></div>
+      <div id="description" style="line-height: 1.5em;"></div>
     </div>
   </div>
 
@@ -45,8 +47,11 @@
     </div>
   </div>
 
-  <div id='watermark'>
+  <!-- <div id='watermark'>
     <span>Made by</span>
     <a href="https://lauragao.ca/" target="_blank">Laura Gao</a>
+  </div> -->
+  <div id='watermark'>
+    <a href="https://tks.world/" target="_blank"><img src="./tks-logo.png"/></a>
   </div>
 </body>
