@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
 
-  "name": "TKS mindsets",
-  "description": "all ur favs in 1 place",
+  "name": "TKS Mindsets",
+  "description": "your values on every tab",
   "action": {
     "default_icon": "icon64.png"
   },
@@ -15,10 +15,5 @@
   "version": "1.0",
   "chrome_url_overrides" : {
     "newtab": "new-tab.html"
-  },
-
-  "permissions": [
-    "alarms",
-    "storage"
-  ]
+  }
 }
